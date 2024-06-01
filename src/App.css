@@ -1,27 +1,18 @@
 .quote {
   font-size: 1.5em;
   font-weight: bold;
-  transition: background-color 1000ms ease-in-out, color 1000ms ease-in-out, height 800ms ease-in-out;
+  transition: background-color 1000ms ease-in-out, color 1000ms ease-in-out;
 }
 
 .author {
   display: flex;
-  justify-content: end;
-  text-align: right;
+  justify-content: center;
   transition: background-color 1000ms ease-in-out, color 1000ms ease-in-out;
 }
 
-Typography {
-  transition: height 800ms ease-in-out;
-}
-
 .quote-container {
-  height: calc(minmax(200px, 350px));
+  height: 150px;
   justify-content: center;
-}
-
-#root {
-  background-color: #282c34;
 }
 
 #new-quote {

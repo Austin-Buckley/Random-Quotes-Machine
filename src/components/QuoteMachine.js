@@ -13,7 +13,7 @@ const styles = {
   }
 }
 
-function QuoteMachine({ colorStyle, selectedQuote, randomizeQuote }) {
+function QuoteMachine({ backgroundColor, textColor, selectedQuote, randomizeQuote }) {
   const { quote, author } = selectedQuote;
   const hashtag = author ? `${author.replace(/\s+/g, '')}` : '';
   const tweet = `https://twitter.com/intent/tweet?text="${quote}"%0A%0A-&hashtags=${hashtag}`;
@@ -22,14 +22,14 @@ function QuoteMachine({ colorStyle, selectedQuote, randomizeQuote }) {
     <Fade in={true} timeout={800}>
       <Card className="quote-card">
         <CardContent>
-          <Quote color={colorStyle} quote={selectedQuote} />
+          <Quote color={textColor} quote={selectedQuote} />
         </CardContent>
         <CardActions className="actions">
           <IconButton size="medium" href={tweet} target="_blank" id="tweet-quote" button>
-            <FontAwesomeIcon className="icon" color={colorStyle} size="md" icon={faTwitter} />
+            <FontAwesomeIcon className="icon" color={backgroundColor} size="md" icon={faTwitter} />
           </IconButton>
           <Button size="medium" onClick={randomizeQuote} id="new-quote" button>
-            <FontAwesomeIcon className="icon" color={colorStyle} size="md" icon={faRandom} />
+            <FontAwesomeIcon className="icon" color={backgroundColor} size="md" icon={faRandom} />
           </Button>
         </CardActions>
       </Card>
