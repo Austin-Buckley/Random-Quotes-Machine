@@ -29,7 +29,7 @@
   transition: background-color 500ms ease-in-out, color 500ms ease-in-out;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 1000px) {
   .quote {
     font-size: 1em;
   }
