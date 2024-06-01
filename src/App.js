@@ -106,7 +106,7 @@ return colors[Math.floor(Math.random() * colors.length)];
     return (
       <Grid className={grid} justifyContent="center" id="quote-box" container 
         style={colorStyle}>
-        <Grid xs={11} lg={5} item>
+        <Grid xs={11} lg={5}  className="grid" item>
           <QuoteMachine 
             className="QuoteMachine" 
             backgroundColor={backgroundColor}

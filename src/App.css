@@ -8,16 +8,29 @@
   display: flex;
   justify-content: right;
   transition: background-color 500ms ease-in-out, color 500ms ease-in-out;
+  padding-right: 2rem;
 }
 
 .quote-container {
   height: 150px;
+
   justify-content: center;
+  transition: height 500ms ease-in-out;
+}
+
+.quote-box {
+  transition: height 500ms ease-in-out;
 }
 
 #new-quote {
   font-size: 1.5em;
   font-weight: bold;
+}
+
+
+.grid {
+  transition: height 500ms ease-in-out;
+
 }
 
 .actions {

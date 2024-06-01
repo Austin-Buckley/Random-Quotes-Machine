@@ -21,7 +21,7 @@ function QuoteMachine({ backgroundColor, textColor, selectedQuote, randomizeQuot
   return (
     <Fade in={true} timeout={800}>
       <Card className="quote-card">
-        <CardContent>
+        <CardContent classname="card-content">
           <Quote color={textColor} quote={selectedQuote} />
         </CardContent>
         <CardActions className="actions">
