@@ -3,27 +3,17 @@ import 'typeface-roboto';
 
 import { Grid, withStyles } from '@material-ui/core';
 
+import Colors from './components/Colors';
 import QuoteMachine from './components/QuoteMachine.js';
 import React from 'react';
 import { random } from 'lodash';
-
-const colors = [
-  '#282c34', // dark blue-gray
-  '#ff6347', // tomato red
-  '#4682b4', // steel blue
-  '#b0c4de', // light steel blue
-  '#ff8c00', // dark orange
-  '#9932cc', // dark orchid
-  '#008000', // green
-  '#00ced1'  // dark turquoise
-];
 
 const styles = {
   container: {
     alignItems: 'center',
     textAlign: 'center',
     height: '100vh',
-    transition: 'background-color 1000ms ease-in-out, color 1000ms ease-in-out'
+    transition: 'background-color 1000ms ease-in-out, color 1000ms ease-in-out,height 500ms ease-in-out'
   }
 }
 
@@ -55,33 +45,29 @@ class App extends React.Component {
       });
     };
     
-
-    randomColor = () => {
-
-return colors[Math.floor(Math.random() * colors.length)];
-    }
-
-
+    randomColor = () => Colors[Math.floor(Math.random() * Colors.length)];
     
     randomizeQuote = () => {
-      this.currentColor = this.randomColor(); 
       let randomColor;
       do {
         randomColor = this.randomColor();
       } while (randomColor === this.currentColor); 
+      
+      this.currentColor = randomColor; 
+      
       this.setState({
         backgroundColor: this.currentColor,
         currentColor: this.backgroundColor,
         textColor: 'white'
       });
       
-       setTimeout(() => {
-        this.setState({
-          currentQuoteIndex: this.selectRandomQuoteIndex(),
-          currentColor: this.currentColor,
-          textColor: this.currentColor,
-         });
-       }, 500);
+      setTimeout(() => {
+      this.setState({
+        currentQuoteIndex: this.selectRandomQuoteIndex(),
+        currentColor: this.currentColor,
+        textColor: this.currentColor,
+        });
+      }, 1000);
     };
 
     selectRandomQuoteIndex = () => {

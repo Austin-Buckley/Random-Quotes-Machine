@@ -1,25 +1,19 @@
 .quote {
   font-size: 1.5em;
   font-weight: bold;
-  transition: background-color 500ms ease-in-out, color 500ms ease-in-out;
+  transition: background-color 300ms ease-in-out, color 450ms ease-in-out;
 }
 
 .author {
   display: flex;
   justify-content: right;
-  transition: background-color 500ms ease-in-out, color 500ms ease-in-out;
+  transition: background-color 300ms ease-in-out, color 450ms ease-in-out;
   padding-right: 2rem;
 }
 
 .quote-container {
   height: 150px;
-
   justify-content: center;
-  transition: height 500ms ease-in-out;
-}
-
-.quote-box {
-  transition: height 500ms ease-in-out;
 }
 
 #new-quote {
@@ -27,20 +21,19 @@
   font-weight: bold;
 }
 
-
-.grid {
-  transition: height 500ms ease-in-out;
-
-}
-
 .actions {
   display: flex;
   justify-content: space-between;
 }
 
- .text, .quote.icon {
-  transition: background-color 500ms ease-in-out, color 500ms ease-in-out;
+ .text {
+  transition: background-color 300ms ease-in-out, color 450ms ease-in-out;
 }
+
+.quote.icon {
+  transition: background-color 300ms ease-in-out, color 450ms ease-in-out;
+}
+
 
 .icon {
   transition: background-color 1000ms ease-in-out, color 1000ms ease-in-out;
