@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/Random-Quotes-Machine/static/css/main.eafdcc2e.css",
+    "main.css": "/Random-Quotes-Machine/static/css/main.b2df5d70.css",
     "main.js": "/Random-Quotes-Machine/static/js/main.d312334e.js",
     "static/js/453.d4fee8b2.chunk.js": "/Random-Quotes-Machine/static/js/453.d4fee8b2.chunk.js",
     "static/media/roboto-latin-900italic.woff": "/Random-Quotes-Machine/static/media/roboto-latin-900italic.c20d916c1a1b094c1cec.woff",
@@ -28,12 +28,12 @@
     "static/media/roboto-latin-400.woff2": "/Random-Quotes-Machine/static/media/roboto-latin-400.176f8f5bd5f02b3abfcf.woff2",
     "static/media/roboto-latin-900.woff2": "/Random-Quotes-Machine/static/media/roboto-latin-900.870c8c1486f76054301a.woff2",
     "index.html": "/Random-Quotes-Machine/index.html",
-    "main.eafdcc2e.css.map": "/Random-Quotes-Machine/static/css/main.eafdcc2e.css.map",
+    "main.b2df5d70.css.map": "/Random-Quotes-Machine/static/css/main.b2df5d70.css.map",
     "main.d312334e.js.map": "/Random-Quotes-Machine/static/js/main.d312334e.js.map",
     "453.d4fee8b2.chunk.js.map": "/Random-Quotes-Machine/static/js/453.d4fee8b2.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.eafdcc2e.css",
+    "static/css/main.b2df5d70.css",
     "static/js/main.d312334e.js"
   ]
 }
