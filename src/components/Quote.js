@@ -10,9 +10,9 @@ function Quote({ color, quote }) {
   return (
       <Typography style={{color}} className="quote-container" id="text">
         <p className="quote">
-          <FontAwesomeIcon className='icon' color={color} icon={faQuoteLeft} /> 
+          <FontAwesomeIcon className='quote icon' color={color} icon={faQuoteLeft} /> 
           {SPACING + quote.quote + SPACING}
-          <FontAwesomeIcon className='icon' color={color} icon={faQuoteRight} />
+          <FontAwesomeIcon className='quote icon' color={color} icon={faQuoteRight} />
         </p>
         <strong className="author" id="author"><em>-{quote.author}</em></strong>
       </Typography>

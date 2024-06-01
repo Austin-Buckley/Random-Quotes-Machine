@@ -25,8 +25,12 @@
   justify-content: space-between;
 }
 
-.icon, .text {
+ .text, .quote.icon {
   transition: background-color 500ms ease-in-out, color 500ms ease-in-out;
+}
+
+.icon {
+  transition: background-color 1000ms ease-in-out, color 1000ms ease-in-out;
 }
 
 @media (max-width: 1000px) {
