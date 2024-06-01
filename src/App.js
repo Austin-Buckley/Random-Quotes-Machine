@@ -81,7 +81,7 @@ return colors[Math.floor(Math.random() * colors.length)];
           currentColor: this.currentColor,
           textColor: this.currentColor,
          });
-       }, 1000);
+       }, 500);
     };
 
     selectRandomQuoteIndex = () => {

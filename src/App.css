@@ -1,13 +1,13 @@
 .quote {
   font-size: 1.5em;
   font-weight: bold;
-  transition: background-color 1000ms ease-in-out, color 1000ms ease-in-out;
+  transition: background-color 500ms ease-in-out, color 500ms ease-in-out;
 }
 
 .author {
   display: flex;
-  justify-content: center;
-  transition: background-color 1000ms ease-in-out, color 1000ms ease-in-out;
+  justify-content: right;
+  transition: background-color 500ms ease-in-out, color 500ms ease-in-out;
 }
 
 .quote-container {
@@ -26,5 +26,19 @@
 }
 
 .icon, .text {
-  transition: background-color 1000ms ease-in-out, color 1000ms ease-in-out;
+  transition: background-color 500ms ease-in-out, color 500ms ease-in-out;
+}
+
+@media (max-width: 768px) {
+  .quote {
+    font-size: 1em;
+  }
+
+  .author {
+    font-size: 0.75em;
+  }
+
+  .quote-container {
+    height: 100px;
+  }
 }
